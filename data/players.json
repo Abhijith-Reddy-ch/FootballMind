@@ -1,0 +1,14 @@
+{
+  "_comment": "Reference export of the role-based attribute templates used to generate rosters. The live source of truth is src/agents/player.py:ROLE_TEMPLATES - build_team() samples around these values with +/-8 random variance per player (seeded, so reproducible). Edit here for documentation purposes; update ROLE_TEMPLATES to actually change simulation behaviour.",
+  "attribute_scale": "1-100",
+  "archetypes": {
+    "GK":  {"speed": 50, "acceleration": 50, "stamina": 70, "passing": 55, "shooting": 20, "dribbling": 30, "tackling": 40, "defending": 75, "vision": 60, "decision_making": 70, "positioning": 85, "strength": 65},
+    "CB":  {"speed": 62, "acceleration": 58, "stamina": 75, "passing": 58, "shooting": 25, "dribbling": 45, "tackling": 82, "defending": 85, "vision": 55, "decision_making": 68, "positioning": 80, "strength": 80},
+    "FB":  {"speed": 75, "acceleration": 74, "stamina": 82, "passing": 65, "shooting": 35, "dribbling": 62, "tackling": 72, "defending": 70, "vision": 60, "decision_making": 64, "positioning": 68, "strength": 62},
+    "CDM": {"speed": 65, "acceleration": 62, "stamina": 85, "passing": 72, "shooting": 40, "dribbling": 58, "tackling": 78, "defending": 75, "vision": 68, "decision_making": 72, "positioning": 75, "strength": 72},
+    "CM":  {"speed": 68, "acceleration": 66, "stamina": 82, "passing": 78, "shooting": 52, "dribbling": 68, "tackling": 60, "defending": 58, "vision": 75, "decision_making": 74, "positioning": 68, "strength": 62},
+    "CAM": {"speed": 70, "acceleration": 70, "stamina": 72, "passing": 82, "shooting": 68, "dribbling": 80, "tackling": 42, "defending": 38, "vision": 88, "decision_making": 80, "positioning": 65, "strength": 52},
+    "WING":{"speed": 86, "acceleration": 85, "stamina": 78, "passing": 68, "shooting": 64, "dribbling": 82, "tackling": 38, "defending": 35, "vision": 68, "decision_making": 66, "positioning": 58, "strength": 52},
+    "ST":  {"speed": 80, "acceleration": 78, "stamina": 70, "passing": 58, "shooting": 85, "dribbling": 72, "tackling": 30, "defending": 28, "vision": 62, "decision_making": 68, "positioning": 78, "strength": 68}
+  }
+}

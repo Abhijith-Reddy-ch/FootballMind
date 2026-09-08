@@ -1,0 +1,10 @@
+{
+  "_comment": "Sample team presets. main.py currently spins up 'Home FC' (user-managed, side HOME) vs 'Away United' (AI, side AWAY) each session via src/agents/team.py:build_team, which procedurally generates rosters from data/players.json's archetypes with a seeded RNG. This file lists alternative club presets that could be selected from in a future team-picker menu.",
+  "presets": [
+    {"name": "Home FC",      "color": [214, 69, 65],  "default_formation": "4-3-3", "default_style": "Balanced"},
+    {"name": "Away United",  "color": [69, 120, 214], "default_formation": "4-4-2", "default_style": "Counter Attack"},
+    {"name": "Riverside AC", "color": [90, 180, 110], "default_formation": "4-2-3-1", "default_style": "Possession"},
+    {"name": "Northgate FC", "color": [220, 170, 60], "default_formation": "3-5-2", "default_style": "High Press"},
+    {"name": "Ironbridge SC","color": [150, 90, 200], "default_formation": "5-3-2", "default_style": "Defensive"}
+  ]
+}

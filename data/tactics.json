@@ -1,0 +1,16 @@
+{
+  "_comment": "Reference export of tactical style presets. Live source of truth: src/ai/tactics.py:STYLE_PRESETS. Values are 0-100 unless noted.",
+  "styles": {
+    "Possession":     {"pressing_intensity": 45, "defensive_line": 55, "passing_risk": 30, "width": 55, "tempo": 45},
+    "Counter Attack": {"pressing_intensity": 35, "defensive_line": 35, "passing_risk": 65, "width": 50, "tempo": 75},
+    "High Press":     {"pressing_intensity": 85, "defensive_line": 75, "passing_risk": 55, "width": 60, "tempo": 70},
+    "Defensive":      {"pressing_intensity": 30, "defensive_line": 25, "passing_risk": 25, "width": 40, "tempo": 40},
+    "Balanced":       {"pressing_intensity": 50, "defensive_line": 50, "passing_risk": 45, "width": 50, "tempo": 50}
+  },
+  "dynamic_adaptation_rules": {
+    "losing_late_75min": "mentality -> ATTACK, pressing +10, defensive_line +10, passing_risk +10, tempo +10",
+    "losing_late_85min": "mentality -> ATTACK, pressing +20, defensive_line +20, passing_risk +20, tempo +20",
+    "winning_late_75min": "mentality -> DEFEND, pressing -10, defensive_line -10, passing_risk -10, tempo -10",
+    "winning_late_85min": "mentality -> DEFEND, pressing -20, defensive_line -20, passing_risk -20, tempo -20"
+  }
+}
